@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'BSD-3-clause'
 
   spec.files         = `git ls-files`.split($/).reject { |file|
-    file =~ /^config/
+    file =~ /^config|^documentation|^data\/gui|^external/
   }
   spec.bindir = '.'
   spec.executables   = [
