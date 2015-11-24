@@ -10,11 +10,11 @@ PATH
       jsobfu (~> 0.3.0)
       json
       metasm (~> 1.0.2)
-      metasploit-concern (= 1.0.0)
-      metasploit-credential (= 1.0.1)
-      metasploit-model (= 1.0.0)
+      metasploit-concern (~> 1.0.0)
+      metasploit-credential (~> 1.0.1)
+      metasploit-model (~> 1.0.0)
       metasploit-payloads (= 1.0.17)
-      metasploit_data_models (= 1.2.9)
+      metasploit_data_models (~> 1.2.9)
       msgpack
       network_interface (~> 0.0.1)
       nokogiri
@@ -247,3 +247,6 @@ DEPENDENCIES
   simplecov
   timecop
   yard
+
+BUNDLED WITH
+   1.10.6
