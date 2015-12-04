@@ -28,6 +28,19 @@ Gem::Specification.new do |spec|
     file =~ /^documentation|^data\/gui|^external/
   }
   spec.bindir = '.'
+  spec.executables   = [
+      'msfbinscan',
+      'msfconsole',
+      'msfd',
+      'msfelfscan',
+      'msfmachscan',
+      'msfpescan',
+      'msfrop',
+      'msfrpc',
+      'msfrpcd',
+      'msfupdate',
+      'msfvenom'
+  ]
   spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ["lib"]
 
