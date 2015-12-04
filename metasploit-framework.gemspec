@@ -28,7 +28,8 @@ Gem::Specification.new do |spec|
     file =~ /^documentation|^data\/gui|^external/
   }
   spec.bindir = '.'
-  spec.executables   = [
+  if ENV['CREATE_BINSTUBS']
+    spec.executables   = [
       'msfbinscan',
       'msfconsole',
       'msfd',
@@ -40,7 +41,8 @@ Gem::Specification.new do |spec|
       'msfrpcd',
       'msfupdate',
       'msfvenom'
-  ]
+    ]
+  end
   spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ["lib"]
 
